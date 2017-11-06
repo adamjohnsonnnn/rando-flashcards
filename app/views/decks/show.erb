@@ -1,0 +1,20 @@
+
+<div class="deck-name">
+<h2> <%= @deck.name %> </h2>
+</div>
+<!-- <div class="deck-description">
+<p>In this set of flashcards, you will answer questions regarding <%= @deck.description %></p>
+</div> -->
+
+<form action="/rounds/new" method="POST">
+  <input type="hidden" value="<%= @deck.id %>" name="id">
+  <input type="submit" value="Start round!" id="round-button">
+</form>
+
+
+
+<% if @deck.photo_url != nil %> 
+<div class="pic-container">
+<img class="deck-pic" src="<%= @deck.photo_url %>" />
+</div>
+<% end %>
