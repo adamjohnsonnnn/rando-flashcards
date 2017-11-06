@@ -1,0 +1,13 @@
+<% if @good_round_message %>
+	<%= @good_round_message %>
+<% end %>
+
+
+<h3>Pick a deck:</h3>
+<ul>
+<% @decks.each do |deck| %>
+  <li><a href="/decks/<%= deck.id %>"><%= deck.name %></a></li>
+<% end %>
+</ul>
+
+

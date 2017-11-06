@@ -1,0 +1,21 @@
+<h3 id="profile-header"><%= @user.username %>'s profile page</h3>
+
+
+<% @rounds.each do |round| %>
+  <p><b>Deck played</b> - "<%= round.deck.name %>"<p>
+  <table id="stats-table">
+    <tr>
+      <td class="column-header">cards answered on first guess</td>
+      <td class="column-header">total number of guesses</td>
+      <td class="column-header">date played</td>
+      <td class="column-header"># of cards in deck</td>
+    </tr>
+    <tr id="stats-row">
+      <td class="column"><%= @correct_on_first[round.id] %></td>
+      <td class="column"><%= round.guesses.count %></td>
+      <td class="column"><%= round.updated_at.strftime("%m/%d/%Y") %></td>
+      <td class="column"><%= round.deck.cards.count %></td>
+    </tr>
+  </table>
+  <br />
+<% end %>

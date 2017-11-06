@@ -1,0 +1,187 @@
+body {
+  background-color: #6083ba;
+  color: white;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+
+#container {
+  max-width: 850px;
+  width: 60%;
+  margin: auto;
+  display: block;
+}
+
+.max-w-700 {
+  max-width: 700px;
+}
+
+
+.center {
+  margin: 0 auto;
+}
+
+
+.wrap-float {
+  overflow: auto;
+}
+
+.mar-t-5 {
+  margin-top: 1em;
+}
+
+.pad-t-2 {
+  padding-top: 2em;
+}
+
+.pad-b-4 {
+  padding-bottom: 1em;
+}
+
+
+.bg-white {
+  background-color: #6083ba;
+}
+
+.clearfix:after {
+   content: " "; /* Older browser do not support empty content */
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+
+.mar-b-1 {
+  margin-bottom: 1em;
+}
+
+
+.no-bullets {
+  list-style-type: none;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.no-outline {
+  outline: none;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+
+.pipe-separate {
+  padding-left: 1em;
+  padding-right: 1em;
+  border-right: 1px solid;
+}
+
+.pipe-separate:first-of-type {
+  padding-left: 0;
+}
+
+  .pipe-separate:last-of-type {
+    padding-right: 0;
+    border-right: none;
+  }
+
+#logout-button {
+  text-decoration: none;
+  background-color: #6083ba;
+  padding: 0px;
+  margin: 0px;
+  border:  none;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+#round-button {
+  background-color: #6083ba;
+  border: 1px solid white;
+  margin-top: 10px;
+  padding: 4px;
+}
+
+#answer-field {
+  color: black;
+}
+
+#stats-table {
+  width: 75%;
+  background-color: white;
+  color: black;
+}
+
+.column-header {
+  font-size: 13px;
+  background-color: #DDDDDD;
+  color: black;
+  padding: 5px;
+  border: 1px solid black;
+}
+
+.column {
+  border: 1px solid black;
+  padding: 10px;
+  min-height: 75px;
+  min-width: 175px;
+}
+
+#stats-row {
+  margin: 10px;
+}
+
+#profile-header {
+  margin-bottom: 45px;
+}
+
+.pic-container {
+  width: 650px;
+  display: block;
+  margin: auto;
+  padding-top: 40px;
+}
+
+.deck-pic {
+  max-width: 650px;
+}
+
+.deck-name {
+/*  background-color: #476aa3;*/
+  text-align: center;
+  padding: 7px;
+  margin: 0px;
+  border: 1px dotted silver;   
+}
+
+.deck-description {
+  /*background-color: #476aa3;  */
+  margin: 0px;
+  max-width: 850px;
+  padding: 5px;
+  padding-right: 15px;
+  border: 1px dotted silver;  
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: inset 0 0 0px 9999px white;
+}

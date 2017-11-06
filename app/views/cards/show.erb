@@ -1,0 +1,29 @@
+<h3><%= @round.deck.name %></h3>
+
+<h5><b>Question:</b>  <%= @round_cards.first.question %></h5>
+
+<% if @message %>
+  <% if @message == 'You got that correct!' %>
+    <br />
+    <span style="color: #d5dde8"><%= @message %></span>
+    <br />
+    <br />
+  <% elsif @message == 'You got that incorrect :(' %>
+    <br />
+    <span style="color: #d5dde8"><%= @message %> -- The correct answer was "<%= @previous_card.answer %>"</span>
+    <br />
+    <br />
+  <% end %>
+<% end %>
+
+
+<form action="/rounds/<%= @round.id %>/cards/<%= @round_cards.first.id %>/guesses" method="POST">
+  <input type="text" name="answer" placeholder="answer" id="answer-field">
+  <input type="submit" value="submit!" id="round-button">
+</form>
+
+<% if @deck.photo_url != nil %> 
+<div class="pic-container">
+<img class="deck-pic" src="<%= @deck.photo_url %>" />
+</div>
+<% end %>
