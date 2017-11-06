@@ -30,4 +30,48 @@ math_fourth_card = Card.create!(question: "412 + 150", answer: "562", deck: basi
 math_fifth_card = Card.create!(question: "23 * 7", answer: "161", deck: basic_math_deck)
 math_sixth_card = Card.create!(question: "15^2", answer: "225", deck: basic_math_deck)
 
+nineties = Deck.create!(name: "Nineties", description: "So much for Reddit nostalgia about the 90's", creator: creator)
+
+nineties_first_card = Card.create!(question: "66 percent of what band kissed on SNL. Causing a minor controversy.", answer: "nirvana", deck: nineties)
+nineties_second_card = Card.create!(question: "Are those tiddleywinks? No, those are...", answer: "pogs", deck: nineties)
+
+nineties_third_card = Card.create!(question: "What single letter caused the nation to mock the Vice President?", answer: "e", deck: nineties)
+
+nineties_fourth_card = Card.create!(question: "In response to a failed assassination plot, what country did Bill Clinton authorize the bombing of?", answer: "iraq", deck: nineties)
+
+nineties_fifth_card = Card.create!(question: "What computer company made headlines with the introduction of their colorful line of internet ready computers?", answer: "apple" deck: nineties)
+
+punchlines_deck = Deck.create!(name: "Punchlines", description: "Where's Duke?", creator: creator)
+
+
+
+punchlines_first_card = Card.create!(question: "Take my wife...", answer: "please", deck: punchlines_deck)
+
+punchlines_second_card = Card.create!(question: "What did Jay-Z call his girlfriend before they got married?", answer: "Feyonce", deck: punchlines_deck)
+
+  punchlines_second_card = Card.create!(question: "What do you call a dinosaur with a extensive vocabulary?", answer: "thesaurus", deck:punchlines_deck)
+#   thesaurus: "What do you call a dinosaur with a extensive vocabulary?",
+#   stick: "What do you call a malfunctioning boomerang? (A)",
+#   nightmare: "What type of horse is nocturnal?"
+# }
+
+# pratchett_characters = {
+#   vetinari: "Veni Vedi...",
+#   carrot: "Tallest dwarf in the night watch.",
+#   ogg: "Last name of both a lecherous witch AND one of Hagrids predecessors at Hogwarts.",
+#   susan: "First name of Deaths grandaughter.",
+#   rincewind: "His hat reads: Wizzard"
+# }
+
+
+
+
+
+
+
+
+
+
+
+
 
